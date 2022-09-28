@@ -1,10 +1,16 @@
+/*jshint esversion: 6 */
+
 const reverseString = function(string) {
-    let stringArray = string.split("")
+    const stringArray = string.split("");
+    const stringLength = stringArray.length;
+    //Using stringArray.length in for loop will make it dynamic
     let resultString = "";
-    for(let i = 1; i<=stringArray.length; i++){
+    for(let i = 0; i < stringLength; i++){
+        // console.log(stringArray.length);
         resultString += stringArray.pop();
+        // console.log(resultString);
     }
-    return reverseString
+    return resultString;
 };
 
 // Do not edit below this line
