@@ -11,6 +11,9 @@ const reverseString = function(string) {
         // console.log(resultString);
     }
     return resultString;
+
+    //easier solution
+    // return string.split('').reverse().join('');
 };
 
 // Do not edit below this line
